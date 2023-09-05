@@ -1,5 +1,6 @@
 alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-for i in alphabet:
-    if i in ["G","R","A","N","T"]:
-        print(f"Letter {i} found")
+alphabetList = [i if i in ["G","R","A","N","T"] else print(f"{ord(i)}") for i in alphabet]
 print("Just kidding")
+
+
+print(alphabetList)
